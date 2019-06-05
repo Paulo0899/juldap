@@ -1,0 +1,2 @@
+Repósitorio criado novamente, pois o anterior clonou pastas e acabou dificultando no desenvolvimento, espero que compreenda,
+fico agradecido.
