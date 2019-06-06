@@ -1,4 +1,6 @@
-package br.edu.unibratec.psc.dbdemo.pagamento;
+package br.edu.unibratec.psc.dbdemo.pedido;
+
+import java.sql.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,25 +11,26 @@ import javax.persistence.Id;
  * User
  */
 @Entity
-public class Pagamento {
+public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private String tipoPagamento;
+    private Date instante;
+
+    public Integer getId() {
+        return id;
+    }
 
     public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getTipoPagamento() {
-        return tipoPagamento;
+    public Date getInstante() {
+        return instante;
     }
 
-    public void setTipoPagamento(String tipoPagamento) {
-        this.tipoPagamento = tipoPagamento;
+    public void setInstante(Date instante) {
+        this.instante = instante;
     }
-
 }
-
-

@@ -15,7 +15,7 @@ public class MailController {
     @RequestMapping(path = "/email-send", method = RequestMethod.GET)
     public String sendMail() {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setText("Email enviado via Spring Boot! Aplicação funcionando.");
+        message.setText("Hello from Spring Boot Application");
         message.setTo("springprojectmjlpv@gmail.com");
         message.setFrom("springprojectmjlpv@gmail.com");
 
